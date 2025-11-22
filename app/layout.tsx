@@ -23,7 +23,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    // IMPORTANTE: Mudança de lang="en" para lang="pt-br"
+    <html lang="pt-br"> 
+      <head>
+        {/* LINK ADICIONADO: Importa a biblioteca Font Awesome para os ícones */}
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
