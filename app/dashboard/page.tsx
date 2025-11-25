@@ -1,9 +1,10 @@
+import Link from "next/link";
+
 // app/dashboard/page.tsx
 // Este é um Server Component por padrão, o que é suficiente para este layout estático.
 
 export default function DashboardPage() {
   return (
-    // O layout geral e a altura total (100vh) são gerenciados pelas classes no globals.css
     <> 
       {/* HEADER - Usa classes customizadas do globals.css */}
       <header>
@@ -28,7 +29,12 @@ export default function DashboardPage() {
         <div className="menu">
           <i className="fa-solid fa-house" />
           <i className="fa-solid fa-book" />
-          <i className="fa-solid fa-chart-line" />
+
+          {/* desempenho com link */}
+          <Link href="/dashboard/desempenho">
+            <i className="fa-solid fa-chart-line" style={{ cursor: 'pointer' }} />
+          </Link>
+
           <i className="fa-solid fa-cog" />
         </div>
 
