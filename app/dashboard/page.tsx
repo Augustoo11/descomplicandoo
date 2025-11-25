@@ -1,8 +1,6 @@
 import Link from "next/link";
 
 // app/dashboard/page.tsx
-// Este é um Server Component por padrão, o que é suficiente para este layout estático.
-
 export default function DashboardPage() {
   return (
     <> 
@@ -46,23 +44,25 @@ export default function DashboardPage() {
           {/* CARTÕES - Classe .cartoes para o layout responsivo */}
           <div className="cartoes">
             
-            {/* Cartão de Matemática */}
-            <div>
-              <div
-                className="card"
-                style={{ background: '#DCEEFF', boxShadow: '0 4px 6px #0000001a' }}
-              >
-                {/* Ícones de fundo - Usam a classe .bg-i */}
-                <i className="bg-i" style={{ fontSize: 20, top: 10, left: 15 }}>A=πr²</i>
-                <i className="bg-i" style={{ fontSize: 20, bottom: 5, right: 5 }}>√</i>
-                <div className="tit">Matemática</div>
+            {/* Cartão de Matemática (AGORA É UM LINK) */}
+            <Link href="/matematica" style={{ textDecoration: "none", color: "inherit" }}>
+              <div>
+                <div
+                  className="card"
+                  style={{ background: '#DCEEFF', boxShadow: '0 4px 6px #0000001a', cursor: 'pointer' }}
+                >
+                  {/* Ícones de fundo - Usam a classe .bg-i */}
+                  <i className="bg-i" style={{ fontSize: 20, top: 10, left: 15 }}>A=πr²</i>
+                  <i className="bg-i" style={{ fontSize: 20, bottom: 5, right: 5 }}>√</i>
+                  <div className="tit">Matemática</div>
+                </div>
+                <div style={{ fontSize: 12, fontWeight: 'bold', marginTop: 10, color: '#335588', textAlign: 'center' }}>
+                  Matemática
+                </div>
               </div>
-              <div style={{ fontSize: 12, fontWeight: 'bold', marginTop: 10, color: '#335588', textAlign: 'center' }}>
-                Matemática
-              </div>
-            </div>
+            </Link>
 
-            {/* Cartão de Português */}
+            {/* Cartão de Português (NÃO ALTERADO) */}
             <div>
               <div
                 className="card"
