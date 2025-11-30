@@ -44,40 +44,44 @@ export default function DashboardPage() {
           {/* CARTÕES - Classe .cartoes para o layout responsivo */}
           <div className="cartoes">
             
-            {/* Cartão de Matemática (AGORA É UM LINK) */}
+            {/* Cartão de Matemática */}
             <Link href="/matematica" style={{ textDecoration: "none", color: "inherit" }}>
               <div>
                 <div
                   className="card"
                   style={{ background: '#DCEEFF', boxShadow: '0 4px 6px #0000001a', cursor: 'pointer' }}
                 >
-                  {/* Ícones de fundo - Usam a classe .bg-i */}
+                  {/* Ícones de fundo */}
                   <i className="bg-i" style={{ fontSize: 20, top: 10, left: 15 }}>A=πr²</i>
                   <i className="bg-i" style={{ fontSize: 20, bottom: 5, right: 5 }}>√</i>
                   <div className="tit">Matemática</div>
                 </div>
+
                 <div style={{ fontSize: 12, fontWeight: 'bold', marginTop: 10, color: '#335588', textAlign: 'center' }}>
                   Matemática
                 </div>
               </div>
             </Link>
 
-            {/* Cartão de Português (NÃO ALTERADO) */}
-            <div>
-              <div
-                className="card"
-                style={{ background: '#DCEEFF', boxShadow: '0 4px 6px #0000001a' }}
-              >
-                {/* Ícones de fundo */}
-                <i className="bg-i" style={{ fontSize: 20, top: 10, right: 15 }}>ABCD</i>
-                <i className="bg-i" style={{ fontSize: 20, bottom: 5, left: 5 }}>.,:;^´~</i>
-                <div className="tit">Português</div>
+            {/* Cartão de Português - CORRIGIDO */}
+            <Link href="/prtugues" style={{ textDecoration: "none", color: "inherit" }}>
+              <div>
+                <div
+                  className="card"
+                  style={{ background: '#DCEEFF', boxShadow: '0 4px 6px #0000001a', cursor: 'pointer' }}
+                >
+                  {/* Ícones de fundo */}
+                  <i className="bg-i" style={{ fontSize: 20, top: 10, right: 15 }}>ABCD</i>
+                  <i className="bg-i" style={{ fontSize: 20, bottom: 5, left: 5 }}>.,:;^´~</i>
+                  <div className="tit">Português</div>
+                </div>
+
+                <div style={{ fontSize: 12, fontWeight: 'bold', marginTop: 10, color: '#335588', textAlign: 'center' }}>
+                  Língua Portuguesa
+                </div>
               </div>
-              <div style={{ fontSize: 12, fontWeight: 'bold', marginTop: 10, color: '#335588', textAlign: 'center' }}>
-                Língua Portuguesa
-              </div>
-            </div>
-            
+            </Link>
+
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ export default function Matematica() {
                 </div>
 
                 <div className="tt" style={{ textAlign: "center", flexGrow: 1 }}>
-                    MATEMÁTICA
+                    PORTUGUÊS
                 </div>
 
                 <div className="icn-u" style={{ width: "150px" }}>
@@ -27,12 +27,10 @@ export default function Matematica() {
 
                 <div className="area">
                     <div className="txt">
-                        A Matemática é uma jornada cheia de descobertas incríveis! Aqui, vamos explorar números,
-                        formas e raciocínios que nos ajudam a entender o mundo ao redor. Com ela, podemos resolver
-                        mistérios, criar soluções e até nos divertir com desafios e jogos.
+                        A Língua Portuguesa é uma aventura cheia de palavras mágicas!  Aqui, vamos aprender a ler, escrever e descobrir o poder que as palavras têm de contar histórias, mostrar sentimhentos e unir pessoas.
                         <br />
                         <br />
-                        Vamos juntos nessa aventura emocionante pelo universo dos números e da lógica!
+                        Vamos Vamos juntos nessa jornada divertida pelo mundo das letras! 
                     </div>
 
                     <div className="vds">
@@ -50,17 +48,17 @@ export default function Matematica() {
                                     fontSize: "12px",
                                     fontWeight: "bold"
                                 }}>
-                                    JOÃO
+                                    HELENA
                                 </div>
 
-                                <img src="/matematica-joao.png" />
+                                <img src="/Portugues-PONTUAÇÂO.png" />
                                 <div className="overlay">
                                     <i className="fa-solid fa-play"></i>
                                 </div>
                             </div>
 
                             <div className="vd-info">
-                                <div className="lbl">SOMA E SUBTRAÇÃO</div>
+                                <div className="lbl">Pontuações</div>
                                 <div className="btn">ASSISTIR</div>
                             </div>
                         </div>
@@ -81,14 +79,14 @@ export default function Matematica() {
                                     LUCIA
                                 </div>
 
-                                <img src="/Outra-mulher-matemática.png" />
+                                <img src="/portugues-substantivo.png" />
                                 <div className="overlay">
                                     <i className="fa-solid fa-play"></i>
                                 </div>
                             </div>
 
                             <div className="vd-info">
-                                <div className="lbl">EQUAÇÃO</div>
+                                <div className="lbl">Substantivo</div>
                                 <div className="btn">ASSISTIR</div>
                             </div>
                         </div>
